@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ range .Paginator.Pages }}
+    <div class="article">
+      <p class="dateLine">{{ .Date.Format "2 January 2006" }}</p>
+      <a class="postTitle">{{ .Title }}</a>
+      {{ .Content }}
+      <div class="separator"></div>
+    </div>
+  {{ end }}
+{{ end }}
