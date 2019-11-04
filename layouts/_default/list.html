@@ -1,5 +1,6 @@
 {{ define "main" }}
-  {{ range .Paginator.Pages }}
+  {{ $list := (where .Site.Pages "Type" "post") }}
+  {{ range $list }}
     <div class="article">
       <p class="dateLine">{{ .Date.Format "2 January 2006" }}</p>
       <a class="postTitle">{{ .Title }}</a>
