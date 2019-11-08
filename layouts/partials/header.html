@@ -5,6 +5,10 @@
 
   <nav>
     <ul>
+      {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+      {{ range $list }}
+         <a href="{{ .Permalink }}"><li>{{ .Title }}</li></a>
+      {{ end }}
       <li class="microblog"><a href="https://micro.blog/cope"><strong>@Cope</strong> on Micro.blog</a></li>
     </ul>
   </nav>
