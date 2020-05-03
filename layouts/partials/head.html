@@ -3,7 +3,7 @@
 
 <title>
    {{ block "title" . }}
-   {{ if .IsHome }}The Cope{{ else }}{{ .Title }} - The Cope{{ end }}
+   {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}
    {{ end }}
 </title>
 
