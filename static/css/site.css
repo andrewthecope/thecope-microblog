@@ -1,8 +1,9 @@
+
 body {
   font-family: objektiv-mk3, sans-serif;
   padding: 0 30px;
-  color: #474747;
-  background-color:white;
+  color: #464646;
+  background-color: #fcfcfc;
   font-weight:400;
   font-size: 17px;
   line-height: 29px;
@@ -113,8 +114,9 @@ header a {
 
 .dateLine {
   color:#7e7e7e;
-  font-weight:700;
-  margin-bottom:5px;
+  font-weight:300;
+  margin-bottom:15px;
+  font-size: 0.9em;
   text-transform: uppercase;
 }
 
@@ -159,6 +161,10 @@ header a {
   margin: 16px 0 16px 20px;
 }
 
+.content img {
+  max-width:100%;
+}
+
 .daybreak {
   display:none;
 }
@@ -189,6 +195,7 @@ code {
   white-space: -o-pre-wrap;
   padding:0 0.3em;
   font-weight:bold;
+  overflow: scroll;
 }
 
 pre code {
@@ -197,6 +204,7 @@ pre code {
   border: 0;
   color:white;
   font-weight:normal;
+  width: max-content;
 }
 
 .paginationfooter {
@@ -234,6 +242,7 @@ nav {
   top: 0;
   right: 0;
   margin-right:20px;
+  text-align: right;
 }
 
 .content ul {
@@ -257,7 +266,6 @@ nav li {
 .microblog strong {
     font-family:"Courier 10 Pitch", Courier, monospace;
 }
-
 
 /* Style overrides for smaller screens */
 
@@ -289,6 +297,11 @@ nav li {
   .projectIcon {
     float:none;
     margin: 0 auto;
+  }
+
+  nav ul {
+    width:100vw;
+    padding-left: 0;
   }
 
 }

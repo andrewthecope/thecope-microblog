@@ -1,3 +1,12 @@
 <footer>
-   &copy; 2016-2019 Andrew Cope
+   © 2016-2020 Andrew Cope
 </footer>
+<script>
+function highlightCode() {
+    var pres = document.querySelectorAll("pre>code");
+    for (var i = 0; i < pres.length; i++) {
+        hljs.highlightBlock(pres[i]);
+    }
+}
+highlightCode();
+</script>
