@@ -1,9 +1,12 @@
 
+html {
+  background-color: #fcfcfc;
+}
+
 body {
   font-family: objektiv-mk3, sans-serif;
   padding: 0 30px;
   color: #464646;
-  background-color: #fcfcfc;
   font-weight:400;
   font-size: 17px;
   line-height: 29px;
